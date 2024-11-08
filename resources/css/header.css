@@ -1,4 +1,4 @@
-.header {
+.header_pc_ipad {
     display: flex;
     align-items: center;
     padding: 8px 16px;
@@ -200,4 +200,127 @@
 .purchase-button:focus {
     outline: none;
     box-shadow: 0 0 0 2px #2D5D90;
+}
+
+.header_mobile {
+    display: none;
+}
+
+@media screen and (max-width: 760px) {
+    .header_pc_ipad {
+        display: none;
+    }
+
+    .header_mobile {
+        display: block;
+        position: fixed;
+        width: 100%;
+        top: 0px;
+        background: #fff9;
+    }
+
+    .navbar-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 4rem;
+        padding: 0 1rem;
+        background: #fff9;
+    }
+
+    .logo-container {
+        display: flex;
+        align-items: center;
+    }
+
+    .logo-link {
+        background-color: #0284c7;
+        padding: 0.5rem;
+        border-radius: 10px;
+        text-decoration: none;
+    }
+
+    .logo-text {
+        font-size: 1.125rem;
+        font-weight: bold;
+        color: white;
+        background: none;
+    }
+
+    .brand-name {
+        font-size: 1.125rem;
+        /* Text-lg */
+        font-weight: 600;
+        color: #374151;
+        /* Gray-700 */
+        margin-left: 0.5rem;
+    }
+
+    /* Actions container */
+    .actions-container {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    /* Search button styling */
+    .search-button {
+        background: none;
+        border: none;
+        cursor: pointer;
+        outline: none;
+    }
+
+    .icon {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
+    /* Purchase button styling */
+    .purchase-button {
+        display: flex;
+        align-items: center;
+        background-color: #2D5D90;
+        /* Custom color */
+        color: white;
+        font-size: 0.875rem;
+        padding: 0.5rem 1.25rem;
+        border-radius: 0.5rem;
+        cursor: pointer;
+        border: none;
+    }
+
+    .purchase-icon {
+        width: 1.25rem;
+        height: 1.25rem;
+    }
+
+    .purchase-text {
+        margin-left: 0.5rem;
+        font-weight: 500;
+    }
+
+    /* Hover and focus effects */
+    .purchase-button:hover {
+        background-color: #38BDF8;
+        /* Lighter blue */
+    }
+
+    .purchase-button:focus {
+        outline: none;
+        box-shadow: 0 0 0 2px #2D5D90;
+    }
+
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    background: white;
+    height: 200px;
+    width: 100px;
 }
