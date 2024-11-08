@@ -1,4 +1,13 @@
 .main {
+    padding-top: 87px;
+    padding-bottom: 50px;
     width: 100%;
     background: linear-gradient(to bottom, #CCE4F6, #F7F8F9);
+}
+
+.banner {
+    max-width: 600px;
+    width: 100%;
+    display: block;
+    margin: auto;
 }
