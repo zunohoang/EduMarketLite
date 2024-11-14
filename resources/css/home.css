@@ -1,8 +1,14 @@
 .main {
-    padding-top: 87px;
+    padding-top: 87px !important; 
     padding-bottom: 50px;
     width: 100%;
     background: linear-gradient(to bottom, #CCE4F6, #F7F8F9);
+}
+
+.line {
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.1);
+    margin: 8px 0;
 }
 
 .banner {
@@ -11,3 +17,255 @@
     display: block;
     margin: auto;
 }
+
+.right__bar {
+    font-size: 1.3rem;
+    color: #155e94;
+}
+
+.right__bar ul {
+    
+}
+.right__bar li:hover {
+    background-color: rgba(26, 79, 140, 0.06);
+}
+
+.right__bar ul li {
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 20px 16px;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    transition: background-color 0.2s ease;
+}
+
+.right__bar ul li p {
+    margin-left: 16px;
+}
+
+.advertisement {
+    width: 100%;
+}
+
+.advertisement img {
+    object-fit: contain;
+    border-radius: 32px;
+    width: 100%;
+}
+
+
+.buy__button {
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: #2D5D90;
+    color: white;
+    font-size: 0.875rem;
+    padding: 0.5rem 1.25rem;
+    border-radius: 0.5rem;
+}
+
+.buy__button svg {
+    margin-right: 5px;
+    width: 24px;
+    height: 24px;
+}
+
+.search__nav {
+    background-color: #FFFFFF;
+    border-radius: 0.75rem;
+    padding: 1.25rem;
+    margin-top: 2rem;
+}
+
+.search__nav title {
+    color: #355676;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+.search__nav .fast__search {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: 0.75rem;
+}
+
+.search__nav .search__item {
+    cursor:  pointer;
+    color: #2E5E97;
+    background-color: #F3F5F6;
+    font-size: 13.125px;
+    padding: 0.5rem 1rem 0.375rem;
+    border-radius: 0.5rem;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+
+.teacher {
+    justify-content: space-between;
+    background-color: #FFFFFF;
+    border-radius: 0.75rem;
+    padding: 1.25rem;
+    padding-bottom: 0;
+    margin-top: 2rem;
+    width: 100%;
+}
+.teacher-header {
+    display:  flex;
+    justify-content: space-between;
+}
+
+.teacher-title {
+    color: #355676;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.teacher-list {
+    display: flex;
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
+    gap: 1.5rem;
+    overflow-x: hidden;
+    height: 220px;
+    transition: overflow 0.3s ease;
+}
+.teacher-list:hover{
+    overflow-x: auto;
+}
+
+.teacher-item{
+    cursor: pointer;
+    color: white;
+    width: 120px;
+    height: 174px;
+    min-width: 120px;
+    border-radius: 0.75rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 0.5rem;
+    background-image: url('../assets/img/home/teacher1.webp');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-decoration: none;
+}
+
+
+.course {
+    background-color: #FFFFFF;
+    border-radius: 0.75rem;
+    padding: 1.25rem;
+    padding-bottom: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    width: 100%;
+}
+
+.course-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.course-title {
+    color: #355676;
+    font-size: 15.75px;
+    font-weight: bold;
+}
+
+.navigation-buttons {
+    display: flex;
+    color: #395978;
+}
+
+.prev-button,
+.next-button {
+    margin-left: 0.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+}
+
+.course-list {
+    padding-top: 1rem;
+    overflow: hidden;
+}
+
+.course-items-container {
+    display: flex;
+    gap: 1.75rem;
+    transition: transform 0.3s ease;
+}
+
+.course-item {
+    width: 200px;
+    background: #fff;
+    padding: 1rem;
+    border-radius: 0.75rem;
+}
+
+
+
+.news {
+    color: #155e94;
+    margin-top: 1.25rem;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.view-all-link {
+    cursor: pointer;
+    font-style: italic;
+    color: #6e7583;
+    text-decoration: none;
+}
+
+.news-item {
+    display: flex;
+    align-items: center;
+    padding: 0.625rem 0;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    color: inherit;
+}
+
+.news-image {
+    border-radius: 0.75rem;
+    width: 50px;
+    height: 50px;
+}
+
+.news-content {
+    margin-left: 1rem;
+}
+
+.news-title {
+    font-weight: 500;
+}
+
+.news-time {
+    color: #6e7583;
+    font-size: 0.75rem;
+}
+
+
+
+
