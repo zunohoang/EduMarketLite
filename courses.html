@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="./resources/css/navigation-bottom.css">
     <link rel="stylesheet" href="https://cdn.lineicons.com/5.0/lineicons.css" />
     <!-- Mấy cái phía trên page nào cũng có nhá ae-->
-    <link rel="stylesheet" href="./resources/css/home.css">
+    <link rel="stylesheet" href="./resources/css/courses.css">
 </head>
 
 <body>
@@ -151,7 +151,161 @@
 
     <!-- Ae code vào đây -->
     <div class="main">
+        <div class="container">
+            <div class="header">
+                <h2 class="title">DANH MỤC</h2>
+                <a href="#" class="see-more">Xem thêm</a>
+            </div>
+            <div class="categories">
+                <a href="#" class="category-card grade-12">
+                    KHÓA HỌC LỚP 12
+                </a>
+                <a href="#" class="category-card grade-11">
+                    KHÓA HỌC LỚP 11
+                </a>
+                <a href="#" class="category-card grade-9">
+                    KHÓA HỌC LỚP 9
+                </a>
+                <a href="#" class="category-card grade-8">
+                    KHÓA HỌC LỚP 8
+                </a>
+                <a href="#" class="category-card grade-7">
+                    KHÓA HỌC LỚP 7
+                </a>
+            </div>
+        </div>
+        <main class="main-content">
+            <div class="container">
+                <h3 class="section-title">DANH MỤC</h3>
+                <div class="grid">
+                    <div class="sidebar">
+                        <h4>Tìm kiếm</h4>
+                        <div class="search-box">
+                            <input type="text" placeholder="Nhập tên khóa học">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" width="20" height="20">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                            </svg>
+                        </div>
+                        <h4>Môn học</h4>
+                        <div class="categories2">
+                            <div class="category">Toán</div>
+                            <div class="category">Văn</div>
+                            <div class="category">Anh</div>
+                            <div class="category">Lý</div>
+                            <div class="category">Hóa</div>
+                            <div class="category">Sinh</div>
+                            <div class="category">Sử</div>
+                        </div>
+                        <div class="filter-buttons">
+                            <button class="btn">Đặt lại</button>
+                            <button class="btn">Lọc</button>
+                        </div>
+                    </div>
+                    <div class="course-content">
+                        <div class="tabs">
+                            <div class="tab active">Tất cả</div>
+                            <div class="tab">Lớp 12</div>
+                            <div class="tab">Lớp 11</div>
+                            <div class="tab">Lớp 10</div>
+                        </div>
+                        <div class="courses-grid" id="coursesGrid">
+                            <!-- Course cards will be dynamically inserted here -->
+                        </div>
+                        <div class="pagination" id="pagination">
+                            <!-- Pagination buttons will be dynamically inserted here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
 
+        <script>
+            const courses = [
+                { name: "Toán 12", img: "./resources/assets/img/1732039836482-3.webp", teacher: "Nguyễn Văn A", id: 1, class: "Lớp 12" },
+                { name: "Văn 12", img: "./resources/assets/img/1732039836482-3.webp", teacher: "Trần Thị B", id: 2, class: "Lớp 12" },
+                { name: "Anh 11", img: "./resources/assets/img/1732039836482-3.webp", teacher: "Lê Văn C", id: 3, class: "Lớp 11" },
+                { name: "Lý 11", img: "./resources/assets/img/1732039836482-3.webp", teacher: "Phạm Thị D", id: 4, class: "Lớp 11" },
+                { name: "Hóa 10", img: "./resources/assets/img/1732039836482-3.webp", teacher: "Nguyễn Văn E", id: 5, class: "Lớp 10" },
+                { name: "Sinh 10", img: "./resources/assets/img/1732039836482-3.webp", teacher: "Trần Thị F", id: 6, class: "Lớp 10" },
+                { name: "Sử 12", img: "./resources/assets/img/1732039836482-3.webp", teacher: "Lê Văn G", id: 7, class: "Lớp 12" },
+                { name: "Địa 11", img: "./resources/assets/img/1732039836482-3.webp", teacher: "Phạm Thị H", id: 8, class: "Lớp 11" },
+                { name: "GDCD 10", img: "./resources/assets/img/1732039836482-3.webp", teacher: "Nguyễn Văn I", id: 9, class: "Lớp 10" },
+                { name: "Tin 12", img: "./resources/assets/img/1732039836482-3.webp", teacher: "Trần Thị J", id: 10, class: "Lớp 12" },
+                { name: "Sử 12", img: "./resources/assets/img/1732039836482-3.webp", teacher: "Lê Văn G", id: 11, class: "Lớp 12" },
+                { name: "Địa 11", img: "./resources/assets/img/1732039836482-3.webp", teacher: "Phạm Thị H", id: 12, class: "Lớp 11" },
+                { name: "GDCD 10", img: "./resources/assets/img/1732039836482-3.webp", teacher: "Nguyễn Văn I", id: 13, class: "Lớp 10" },
+                { name: "Tin 12", img: "./resources/assets/img/1732039836482-3.webp", teacher: "Trần Thị J", id: 14, class: "Lớp 12" },
+            ];
+
+            let currentPage = 1;
+            const coursesPerPage = 10;
+            let activeClass = "Tất cả";
+
+            function renderCourses() {
+                const coursesGrid = document.getElementById('coursesGrid');
+                coursesGrid.innerHTML = '';
+
+                const filteredCourses = courses.filter(course =>
+                    activeClass === "Tất cả" || course.class === activeClass
+                );
+
+                const startIndex = (currentPage - 1) * coursesPerPage;
+                const endIndex = startIndex + coursesPerPage;
+                const coursesToShow = filteredCourses.slice(startIndex, endIndex);
+
+                coursesToShow.forEach(course => {
+                    const courseCard = document.createElement('div');
+                    courseCard.className = 'course-card';
+                    courseCard.innerHTML = `
+                        <img src="${course.img}" alt="${course.name}">
+                        <div class="course-info">
+                            <h3 class="course-title">${course.name}</h3>
+                            <p class="course-teacher">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="12" height="12" style="margin-right: 4px;">
+                                    <path fill-rule="evenodd" d="M7.5 6a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM3.751 20.105a8.25 8.25 0 0 1 16.498 0 .75.75 0 0 1-.437.695A18.683 18.683 0 0 1 12 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 0 1-.437-.695Z" clip-rule="evenodd" />
+                                </svg>
+                                ${course.teacher}
+                            </p>
+                        </div>
+                    `;
+                    coursesGrid.appendChild(courseCard);
+                });
+
+                renderPagination(filteredCourses.length);
+            }
+
+            function renderPagination(totalCourses) {
+                const pagination = document.getElementById('pagination');
+                pagination.innerHTML = '';
+
+                const totalPages = Math.ceil(totalCourses / coursesPerPage);
+
+                for (let i = 1; i <= totalPages; i++) {
+                    const button = document.createElement('button');
+                    button.textContent = i;
+                    button.classList.toggle('active', i === currentPage);
+                    button.addEventListener('click', () => {
+                        currentPage = i;
+                        renderCourses();
+                    });
+                    pagination.appendChild(button);
+                }
+            }
+
+            document.querySelectorAll('.tab').forEach(tab => {
+                tab.addEventListener('click', () => {
+                    document.querySelector('.tab.active').classList.remove('active');
+                    tab.classList.add('active');
+                    activeClass = tab.textContent;
+                    currentPage = 1;
+                    renderCourses();
+                });
+            });
+
+            renderCourses();
+        </script>
     </div>
 
     <footer class="footer">
