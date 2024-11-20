@@ -1,0 +1,254 @@
+:root {
+    --primary: #2D5D90;
+    --primary-dark: #1e3f63;
+    --gray-100: #f3f4f6;
+    --gray-200: #e5e7eb;
+    --gray-300: #d1d5db;
+    --gray-500: #6b7280;
+    --gray-700: #374151;
+    --gray-900: #111827;
+}
+
+
+.main {
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Inter', sans-serif;
+    background-color: var(--gray-100);
+    color: var(--gray-900);
+    line-height: 1.5;
+    padding-top: 87px;
+}
+
+.main-content {
+    margin-top: 70px;
+    padding: 24px;
+}
+
+.section-title {
+    color: #355676;
+    font-size: 17.5px;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 24px;
+}
+
+.sidebar {
+
+    padding: 20px;
+    border-radius: 8px;
+
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    background-color: #EEF0F3;
+    border-radius: 6px;
+    padding: 8px 12px;
+    margin-bottom: 16px;
+}
+
+.search-box input {
+    flex-grow: 1;
+    border: none;
+    background-color: transparent;
+    font-size: 14px;
+    outline: none;
+}
+
+.categories2 {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+.category {
+    background-color: #EAEDF0;
+    color: #1B1B1B;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 13px;
+    cursor: pointer;
+    width: fit-content;
+    display: inline-flex;
+}
+
+.filter-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+}
+
+.btn {
+    background-color: #2E5E97;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.tabs {
+    display: flex;
+    border-bottom: 1px solid #E5E7EB;
+    margin-bottom: 24px;
+}
+
+.tab {
+    padding: 12px 24px;
+    cursor: pointer;
+    color: #6B7280;
+    font-weight: 500;
+}
+
+.tab.active {
+    color: #2D5D90;
+    border-bottom: 2px solid #2D5D90;
+}
+
+.courses-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 24px;
+}
+
+.course-card {
+    border-radius: 8px;
+    overflow: hidden;
+    /* box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); */
+    transition: transform 0.2s;
+}
+
+.course-card:hover {
+    transform: translateY(-4px);
+}
+
+.course-card img {
+    width: 100%;
+    min-height: fit-content;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+
+.course-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #395978;
+    margin-bottom: 4px;
+}
+
+.course-teacher {
+    font-size: 14px;
+    color: #6B7280;
+    display: flex;
+    background: none;
+    align-items: center;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 24px;
+}
+
+.pagination button {
+    margin: 0 4px;
+    padding: 8px 12px;
+    border: 1px solid #D1D5DB;
+    background-color: white;
+    color: #374151;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.pagination button.active {
+    background-color: #2D5D90;
+    color: white;
+    border-color: #2D5D90;
+}
+
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+.title {
+    color: #355676;
+    font-size: 17.5px;
+    font-weight: bold;
+}
+
+.see-more {
+    color: #355676;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    display: block;
+    text-align: right;
+}
+
+.categories {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.category-card {
+    aspect-ratio: 16/9;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.2s;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.category-card:hover {
+    transform: translateY(-4px);
+}
+
+.grade-12 {
+    background: linear-gradient(135deg, #8B5CF6, #6366F1);
+}
+
+.grade-11 {
+    background: linear-gradient(135deg, #A3E635, #84CC16);
+}
+
+.grade-9 {
+    background: linear-gradient(135deg, #34D399, #10B981);
+}
+
+.grade-8 {
+    background: linear-gradient(135deg, #A855F7, #9333EA);
+}
+
+.grade-7 {
+    background: linear-gradient(135deg, #F97316, #EA580C);
+}
+
+@media (max-width: 768px) {
+    .categories {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+
+    .category-card {
+        font-size: 16px;
+    }
+}
