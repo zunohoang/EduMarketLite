@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="https://cdn.lineicons.com/5.0/lineicons.css" />
     <!-- Mấy cái phía trên page nào cũng có nhá ae-->
     <link rel="stylesheet" href="./resources/css/home.css">
+    <link rel="stylesheet" href="./resources/css/sign-in.css">
 </head>
 
 <body>
@@ -65,7 +66,7 @@
 
             <div class="auth-container">
                 <div class="auth-buttons background-none" style="background: none;">
-                    <a href="./register.html" style="background: none;">
+                    <a href="./sign-up.html" style="background: none;">
                         <button style="background: none;" class="auth-button register-button">Đăng ký</button>
                     </a>
                 </div>
@@ -151,7 +152,30 @@
 
     <!-- Ae code vào đây -->
     <div class="main">
-
+        <div class="container">
+            <div class="login-section">
+                <h2>ĐĂNG NHẬP</h2>
+                <form id="loginForm">
+                    <div class="form-group">
+                        <label for="username">Tên tài khoản</label>
+                        <input placeholder="Tên tài khoản" type="text" id="username" name="username" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Mật khẩu</label>
+                        <input placeholder="Mật khẩu" type="password" id="password" name="password" required>
+                    </div>
+                    <button type="submit" class="login-button">Đăng nhập</button>
+                </form>
+                <div id="message" class="message" style="display: none;"></div>
+                <div class="register-link">
+                    Chưa có tài khoản? <a href="./sign-up.html">Đăng kí</a>
+                </div>
+            </div>
+            <div class="image-section">
+                <h1 class="welcome-text">Chào mừng bạn đến với EduMarket</h1>
+                <img src="./resources/assets/img/loginpicture.gif" alt="Education illustration">
+            </div>
+        </div>
     </div>
 
     <footer class="footer">
@@ -287,6 +311,7 @@
     <script src="./resources/js/footer.js"></script>
     <script src="./resources/js/enter-key.js"></script>
     <!-- Ae thêm script sau thẻ này-->
+    <script src="./resources/js/sign-in-auth.js"></script>
 </body>
 
 </html>
