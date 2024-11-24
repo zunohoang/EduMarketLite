@@ -135,6 +135,6 @@ h1 {
     }
 
     .image-section {
-        width: 100%;
+        display: none;
     }
 }
