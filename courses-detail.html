@@ -12,7 +12,11 @@
     <link rel="stylesheet" href="./resources/css/navigation-bottom.css">
     <link rel="stylesheet" href="https://cdn.lineicons.com/5.0/lineicons.css" />
     <!-- Mấy cái phía trên page nào cũng có nhá ae-->
-    <link rel="stylesheet" href="./resources/css/courses.css">
+    <link rel="stylesheet" href="./resources/css/home.css">
+    <link rel="stylesheet" href="./resources/css/courses-detail.css">
+    <link rel="stylesheet" href="./resources/css/courses-detail.css">
+    <link rel="stylesheet" href="./resources/css/grid.css">
+
 </head>
 
 <body>
@@ -151,162 +155,96 @@
 
     <!-- Ae code vào đây -->
     <div class="main">
-        <div class="container">
-            <div class="header">
-                <h2 class="title">DANH MỤC</h2>
-                <a href="#" class="see-more">Xem thêm</a>
-            </div>
-            <div class="categories">
-                <a href="#" class="category-card grade-12">
-                    KHÓA HỌC LỚP 12
-                </a>
-                <a href="#" class="category-card grade-11">
-                    KHÓA HỌC LỚP 11
-                </a>
-                <a href="#" class="category-card grade-9">
-                    KHÓA HỌC LỚP 9
-                </a>
-                <a href="#" class="category-card grade-8">
-                    KHÓA HỌC LỚP 8
-                </a>
-                <a href="#" class="category-card grade-7">
-                    KHÓA HỌC LỚP 7
-                </a>
-            </div>
-        </div>
-        <main class="main-content">
-            <div class="container">
-                <h3 class="section-title">DANH MỤC</h3>
-                <div class="grid">
-                    <div class="sidebar">
-                        <h4>Tìm kiếm</h4>
-                        <div class="search-box">
-                            <input type="text" placeholder="Nhập tên khóa học">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                                stroke="currentColor" width="20" height="20">
-                                <path stroke-linecap="round" stroke-linejoin="round"
-                                    d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
-                            </svg>
-                        </div>
-                        <h4>Môn học</h4>
-                        <div class="categories2">
-                            <div class="category">Toán</div>
-                            <div class="category">Văn</div>
-                            <div class="category">Anh</div>
-                            <div class="category">Lý</div>
-                            <div class="category">Hóa</div>
-                            <div class="category">Sinh</div>
-                            <div class="category">Sử</div>
-                        </div>
-                        <div class="filter-buttons">
-                            <button class="btn">Đặt lại</button>
-                            <button class="btn">Lọc</button>
-                        </div>
-                    </div>
-                    <div class="course-content">
-                        <div class="tabs">
-                            <div class="tab active">Tất cả</div>
-                            <div class="tab">Lớp 12</div>
-                            <div class="tab">Lớp 11</div>
-                            <div class="tab">Lớp 10</div>
-                        </div>
-                        <div class="courses-grid" id="coursesGrid">
-                            <!-- Course cards will be dynamically inserted here -->
-                        </div>
-                        <div class="pagination" id="pagination">
-                            <!-- Pagination buttons will be dynamically inserted here -->
-                        </div>
-                    </div>
+        <div class="left-container l-7 m-6">
+            <div class="video-section">
+                <div class="blur-background"></div>
+                <div class="video-header">
+                    <img src="./resources/assets/img/home/banner.webp" alt="" class="video-logo">
+                    <h3>Công phá mọi thứ</h3>
                 </div>
             </div>
-        </main>
 
-        <script>
-            const courses = [
-                { name: "Toán 12", img: "./resources/assets/img/1732039836482-3.webp", teacher: "Nguyễn Văn A", id: 1, class: "Lớp 12" },
-                { name: "Văn 12", img: "./resources/assets/img/1732039836482-3.webp", teacher: "Trần Thị B", id: 2, class: "Lớp 12" },
-                { name: "Anh 11", img: "./resources/assets/img/1732039836482-3.webp", teacher: "Lê Văn C", id: 3, class: "Lớp 11" },
-                { name: "Lý 11", img: "./resources/assets/img/1732039836482-3.webp", teacher: "Phạm Thị D", id: 4, class: "Lớp 11" },
-                { name: "Hóa 10", img: "./resources/assets/img/1732039836482-3.webp", teacher: "Nguyễn Văn E", id: 5, class: "Lớp 10" },
-                { name: "Sinh 10", img: "./resources/assets/img/1732039836482-3.webp", teacher: "Trần Thị F", id: 6, class: "Lớp 10" },
-                { name: "Sử 12", img: "./resources/assets/img/1732039836482-3.webp", teacher: "Lê Văn G", id: 7, class: "Lớp 12" },
-                { name: "Địa 11", img: "./resources/assets/img/1732039836482-3.webp", teacher: "Phạm Thị H", id: 8, class: "Lớp 11" },
-                { name: "GDCD 10", img: "./resources/assets/img/1732039836482-3.webp", teacher: "Nguyễn Văn I", id: 9, class: "Lớp 10" },
-                { name: "Tin 12", img: "./resources/assets/img/1732039836482-3.webp", teacher: "Trần Thị J", id: 10, class: "Lớp 12" },
-                { name: "Sử 12", img: "./resources/assets/img/1732039836482-3.webp", teacher: "Lê Văn G", id: 11, class: "Lớp 12" },
-                { name: "Địa 11", img: "./resources/assets/img/1732039836482-3.webp", teacher: "Phạm Thị H", id: 12, class: "Lớp 11" },
-                { name: "GDCD 10", img: "./resources/assets/img/1732039836482-3.webp", teacher: "Nguyễn Văn I", id: 13, class: "Lớp 10" },
-                { name: "Tin 12", img: "./resources/assets/img/1732039836482-3.webp", teacher: "Trần Thị J", id: 14, class: "Lớp 12" },
-            ];
-
-            let currentPage = 1;
-            const coursesPerPage = 10;
-            let activeClass = "Tất cả";
-
-            function renderCourses() {
-                const coursesGrid = document.getElementById('coursesGrid');
-                coursesGrid.innerHTML = '';
-
-                const filteredCourses = courses.filter(course =>
-                    activeClass === "Tất cả" || course.class === activeClass
-                );
-
-                const startIndex = (currentPage - 1) * coursesPerPage;
-                const endIndex = startIndex + coursesPerPage;
-                const coursesToShow = filteredCourses.slice(startIndex, endIndex);
-
-                coursesToShow.forEach(course => {
-                    const courseCard = document.createElement('a');
-                    courseCard.className = 'course-card';
-                    courseCard.href = './courses-detail.html'
-                    courseCard.innerHTML = `
-                        <img src="${course.img}" alt="${course.name}">
-                        <div class="course-info">
-                            <h3 class="course-title">${course.name}</h3>
-                            <p class="course-teacher">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="12" height="12" style="margin-right: 4px;">
-                                    <path fill-rule="evenodd" d="M7.5 6a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM3.751 20.105a8.25 8.25 0 0 1 16.498 0 .75.75 0 0 1-.437.695A18.683 18.683 0 0 1 12 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 0 1-.437-.695Z" clip-rule="evenodd" />
-                                </svg>
-                                ${course.teacher}
-                            </p>
+            <div class="author-desc">
+                <div class="author-header-container">
+                    <div class="author-header">
+                        <img src="./resources/assets/img/home/teacher1.webp" alt="" class="author-img">
+                        <div class="author-content">
+                            <h4>Thầy Hoàng</h4>
+                            <p>Giáo viên</p>
                         </div>
-                    `;
-                    coursesGrid.appendChild(courseCard);
-                });
+                    </div>
+                    <div class="purchase-button-container">
+                        <button class="purchase-button" onclick="togglePurchase()">
+                            <svg class="purchase-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M19.79 14.9299C17.73 16.9799 14.78 17.6099 12.19 16.7999L7.48002 21.4999C7.14002 21.8499 6.47002 22.0599 5.99002 21.9899L3.81002 21.6899C3.09002 21.5899 2.42002 20.9099 2.31002 20.1899L2.01002 18.0099C1.94002 17.5299 2.17002 16.8599 2.50002 16.5199L7.20002 11.8199C6.40002 9.21995 7.02002 6.26995 9.08002 4.21995C12.03 1.26995 16.82 1.26995 19.78 4.21995C22.74 7.16995 22.74 11.9799 19.79 14.9299Z"
+                                    stroke="#ffffff" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round">
+                                </path>
+                                <path d="M6.89001 17.49L9.19001 19.79" stroke="#ffffff" stroke-width="2" stroke-miterlimit="10"
+                                    stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path
+                                    d="M14.5 11C15.3284 11 16 10.3284 16 9.5C16 8.67157 15.3284 8 14.5 8C13.6716 8 13 8.67157 13 9.5C13 10.3284 13.6716 11 14.5 11Z"
+                                    stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg>
+                            <span class="purchase-text">Mã kích hoạt khóa học</span>
+                        </button>
+                    </div>
+                </div>
 
-                renderPagination(filteredCourses.length);
-            }
+                <div class="author-quote">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus laborum, et, magni vitae laudantium porro distinctio, at labore vero perferendis voluptas! Qui quidem similique impedit, a quas corrupti asperiores dolore?
+                </div>
+            </div>
+        </div>
 
-            function renderPagination(totalCourses) {
-                const pagination = document.getElementById('pagination');
-                pagination.innerHTML = '';
+        <div class="right-container l-5 m-6">
+            <div class="chapter-section">
+                <h1>Danh sách bài học</h1>
+                <div class="chapter-list">
+                    <button class="chapter-button">
+                        CHƯƠNG I. HÀM SỐ LƯỢNG GIÁC VÀ PHƯƠNG TRÌNH LƯỢNG GIÁC.
+                        <span class="plus">+</span>
+                    </button>
+                    <button class="chapter-button">
+                        CHƯƠNG II. DÃY SỐ. CẤP SỐ CỘNG VÀ CẤP SỐ NHÂN.
+                        <span class="plus">+</span>
+                    </button>
+                    <button class="chapter-button">
+                        CHƯƠNG III. CÁC SỐ ĐẶC TRƯNG ĐO XU THẾ TRUNG TÂM CỦA MẪU SỐ LIỆU GHÉP NHÓM.
+                        <span class="plus">+</span>
+                    </button>
+                    <button class="chapter-button">
+                        CHƯƠNG IV. QUAN HỆ SONG SONG TRONG KHÔNG GIAN.
+                        <span class="plus">+</span>
+                    </button>
+                    <button class="chapter-button">
+                        CHƯƠNG V. GIỚI HẠN. HÀM SỐ LIÊN TỤC.
+                        <span class="plus">+</span>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="comments-section">
+                <h2>Bình luận</h2>
+                <form class="comment-form" id="commentForm">
+                    <div class="avatar">
+                        <svg viewBox="0 0 24 24">
+                            <path
+                                d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
+                        </svg>
+                    </div>
+                    <div class="comment-input-container">
+                        <textarea class="comment-input" placeholder="Viết bình luận..." id="commentInput"></textarea>
+                        <button type="submit" class="submit-button">Bình luận</button>
+                    </div>
+                </form>
+                <div class="comments-list" id="commentsList">
+                </div>
+            </div>
 
-                const totalPages = Math.ceil(totalCourses / coursesPerPage);
+            </div>
+        </div>
 
-                for (let i = 1; i <= totalPages; i++) {
-                    const button = document.createElement('button');
-                    button.textContent = i;
-                    button.classList.toggle('active', i === currentPage);
-                    button.addEventListener('click', () => {
-                        currentPage = i;
-                        renderCourses();
-                    });
-                    pagination.appendChild(button);
-                }
-            }
-
-            document.querySelectorAll('.tab').forEach(tab => {
-                tab.addEventListener('click', () => {
-                    document.querySelector('.tab.active').classList.remove('active');
-                    tab.classList.add('active');
-                    activeClass = tab.textContent;
-                    currentPage = 1;
-                    renderCourses();
-
-                });
-            });
-            renderCourses();
-        </script>
     </div>
 
     <footer class="footer">
@@ -385,7 +323,8 @@
                         <li>
                             <a href="./index.html" class="nav-link active">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24" fill="none"
-                                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
                                     <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
                                     <polyline points="9 22 9 12 15 12 15 22"></polyline>
                                 </svg>
@@ -396,7 +335,8 @@
                         <li>
                             <a href="./courses.html" class="nav-link">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24" fill="none"
-                                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
                                     <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
                                     <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
                                 </svg>
@@ -407,7 +347,8 @@
                         <li>
                             <a href="./news.html" class="nav-link">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24" fill="none"
-                                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
                                     <path
                                         d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2Zm0 0a2 2 0 0 1-2-2v-9c0-1.1.9-2 2-2h2">
                                     </path>
@@ -422,7 +363,8 @@
                         <li>
                             <a href="./login.html" class="nav-link">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24" fill="none"
-                                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
                                     <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
                                     <circle cx="12" cy="7" r="4"></circle>
                                 </svg>
@@ -438,6 +380,7 @@
     <script src="./resources/js/footer.js"></script>
     <script src="./resources/js/enter-key.js"></script>
     <!-- Ae thêm script sau thẻ này-->
+     <script src="./resources//js/courses-detail.js"></script>
 </body>
 
 </html>
