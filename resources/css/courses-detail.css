@@ -10,11 +10,13 @@
 }
 
 .left-container {
+    margin: 0 auto;
+    padding: 20px;
 }
 
 .right-container {
     margin: 0 auto;
-    padding:  0 20px;
+    padding:20px;
 }
 
 .video-section {
@@ -143,7 +145,7 @@ h1 {
 }
 
 .comments-section {
-    margin-top: 85px;
+    margin-top: 65px;
     border-radius: 10px;
     background: white;
     padding: 10px;
