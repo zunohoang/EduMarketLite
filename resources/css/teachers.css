@@ -1,0 +1,27 @@
+.main {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.teachers-container {
+    background: white;
+    padding: 10px;
+    border-radius: 7px;
+    width: 100%;
+}
+
+.teachers-container>p {
+    color: #2d5d90;
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+
+.teachers-container img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.teachers-container a {
+    text-decoration: none;
+    color: #2d5d90;
+}

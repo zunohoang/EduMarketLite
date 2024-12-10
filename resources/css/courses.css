@@ -22,7 +22,7 @@
 
 .main-content {
     margin-top: 70px;
-    padding: 24px;
+    /* padding: 24px; */
 }
 
 .section-title {
@@ -39,8 +39,6 @@
 }
 
 .sidebar {
-
-    padding: 20px;
     border-radius: 8px;
 
 }
@@ -64,8 +62,10 @@
 
 .categories2 {
     display: flex;
+    flex-wrap: wrap;
     gap: 8px;
     margin-bottom: 16px;
+    width: 100%;
 }
 
 .category {
@@ -117,6 +117,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 24px;
+    width: 100%;
 }
 
 .course-card {
@@ -131,7 +132,7 @@
 }
 
 .course-card img {
-    width: 100%;
+    width: 99%;
     min-height: fit-content;
     object-fit: cover;
     border-radius: 5px;

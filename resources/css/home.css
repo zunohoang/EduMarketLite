@@ -1,5 +1,5 @@
 .main {
-    padding-top: 87px !important; 
+    padding-top: 87px !important;
     padding-bottom: 50px;
     width: 100%;
     background: linear-gradient(to bottom, #CCE4F6, #F7F8F9);
@@ -19,13 +19,12 @@
 }
 
 .right__bar {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     color: #155e94;
 }
 
-.right__bar ul {
-    
-}
+.right__bar ul {}
+
 .right__bar li:hover {
     background-color: rgba(26, 79, 140, 0.06);
 }
@@ -35,7 +34,7 @@
     display: flex;
     align-items: center;
     justify-content: start;
-    padding: 20px 16px;
+    padding: 12px 8px;
     cursor: pointer;
     border-radius: 0.5rem;
     transition: background-color 0.2s ease;
@@ -87,6 +86,7 @@
     font-size: 1.3rem;
     font-weight: bold;
 }
+
 .search__nav .fast__search {
     display: flex;
     flex-wrap: wrap;
@@ -95,7 +95,7 @@
 }
 
 .search__nav .search__item {
-    cursor:  pointer;
+    cursor: pointer;
     color: #2E5E97;
     background-color: #F3F5F6;
     font-size: 13.125px;
@@ -114,8 +114,9 @@
     margin-top: 2rem;
     width: 100%;
 }
+
 .teacher-header {
-    display:  flex;
+    display: flex;
     justify-content: space-between;
 }
 
@@ -134,11 +135,12 @@
     height: 220px;
     transition: overflow 0.3s ease;
 }
-.teacher-list:hover{
+
+.teacher-list:hover {
     overflow-x: auto;
 }
 
-.teacher-item{
+.teacher-item {
     cursor: pointer;
     color: white;
     width: 120px;
@@ -165,6 +167,7 @@
     margin-top: 2rem;
     margin-bottom: 2rem;
     width: 100%;
+    overflow: hidden;
 }
 
 .course-header {
@@ -195,20 +198,36 @@
 
 .course-list {
     padding-top: 1rem;
-    overflow: hidden;
+    display: flex;
 }
 
-.course-items-container {
+.course-item-container {
+    padding-top: 1rem;
     display: flex;
-    gap: 1.75rem;
+    gap: 45px;
     transition: transform 0.3s ease;
 }
 
 .course-item {
-    width: 200px;
+    width: 125px;
+    height: 225px;
     background: #fff;
     padding: 1rem;
     border-radius: 0.75rem;
+    list-style: none;
+    text-decoration: none;
+    color: #2E5E97;
+}
+
+.item-image img {
+    width: 125px;
+    height: 125px;
+    border-radius: 10px;
+}
+
+.item-info {
+    width: 125px;
+    height: 125px;
 }
 
 
@@ -265,7 +284,3 @@
     color: #6e7583;
     font-size: 0.75rem;
 }
-
-
-
-
