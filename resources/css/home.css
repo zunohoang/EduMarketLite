@@ -20,6 +20,7 @@
 
 .right__bar {
     font-size: 1.1rem;
+    padding:  0 30px 0;
     color: #155e94;
 }
 
@@ -34,7 +35,7 @@
     display: flex;
     align-items: center;
     justify-content: start;
-    padding: 12px 8px;
+    padding: 8px 4px;
     cursor: pointer;
     border-radius: 0.5rem;
     transition: background-color 0.2s ease;
