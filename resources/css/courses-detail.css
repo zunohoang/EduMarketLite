@@ -4,8 +4,14 @@
     box-sizing: border-box;
     font-family: system-ui, -apple-system, sans-serif;
 }
+
+
 .active {
     display: flex !important;
+}
+
+body {
+    background-color: #f3f4f5;
 }
 .main {
     display: flex;
@@ -65,7 +71,7 @@
 .author-desc {
     background: white;
     margin-top: 20px;
-    padding: 10px;
+    padding: 20px;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 5px;
 }
@@ -75,7 +81,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
 }
 .author-header {
     display: flex;
@@ -106,7 +112,7 @@
 
 
 h1 {
-    font-size: 24px;
+    font-size: 16px;
     margin-bottom: 20px;
     color: #333;
 }
@@ -114,7 +120,7 @@ h1 {
 .chapter-section {
     border-radius: 10px;
     background: white;
-    padding: 10px;
+    padding: 20px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 5px;
 }
 
@@ -125,10 +131,10 @@ h1 {
 }
 
 .chapter-button {
-    background-color: #2d5ca6;
+    background-color: #395c8c;
     color: white;
     border: none;
-    padding: 5px;
+    padding: 2px;
     border-radius: 8px;
     cursor: pointer;
     display: flex;
@@ -183,7 +189,7 @@ h1 {
 }
 
 .chapter-button:hover {
-    background-color: #234780;
+    background-color: #395c8c;
 }
 
 .chapter-button .plus {
@@ -195,14 +201,14 @@ h1 {
     margin-top: 65px;
     border-radius: 10px;
     background: white;
-    padding: 10px;
+    padding: 30px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 5px;
 
 }
 
 .comments-section h2 {
     font-size: 24px;
-    margin-bottom: 20px;
+    margin-bottom: 16px;
     color: #333;
 }
 
@@ -215,7 +221,7 @@ h1 {
 .avatar {
     width: 48px;
     height: 48px;
-    background-color: #2d5ca6;
+    background-color: #395c8c;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -250,13 +256,13 @@ h1 {
 
 .comment-input:focus {
     outline: none;
-    border-color: #2d5ca6;
+    border-color: #395c8c;
     background-color: white;
 }
 
 .submit-button {
     align-self: flex-end;
-    background-color: #2d5ca6;
+    background-color: #395c8c;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -267,7 +273,7 @@ h1 {
 }
 
 .submit-button:hover {
-    background-color: #234780;
+    background-color: #395c8c;
 }
 
 .comments-list {
