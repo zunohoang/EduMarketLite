@@ -151,13 +151,43 @@
     justify-content: center;
     align-items: flex-end;
     padding: 0.5rem;
-    background-image: url('../assets/img/home/teacher1.webp');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     text-decoration: none;
 }
 
+.bg1 {
+    background-image: url('../assets/img/teachers/co-pham-lieu.webp');
+}
+
+.bg2 {
+    background-image: url('../assets/img/teachers/co-thuy.webp');
+}
+
+.bg3 {
+    background-image: url('../assets/img/teachers/thay-dang-tien-nghia.webp');
+}
+
+.bg4 {
+    background-image: url('../assets/img/teachers/thay-nguyen-anh-phong.webp');
+}
+
+.bg5 {
+    background-image: url('../assets/img/teachers/thay-nguyen-chi-nhan.webp');
+}
+
+.bg6 {
+    background-image: url('../assets/img/teachers/thay-nguyen-dinh-kien.webp');
+}
+
+.bg7 {
+    background-image: url('../assets/img/teachers/thay-nguyen-hoang-gia-anh.webp');
+}
+
+.bg8 {
+    background-image: url('../assets/img/teachers/thay-pham-minh-kien.webp');
+}
 
 .course {
     background-color: #FFFFFF;

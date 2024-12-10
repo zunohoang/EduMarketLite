@@ -222,22 +222,26 @@
         </main>
 
         <script>
-            const courses = [
-                { name: "Toán 12", img: "./resources/assets/img/1732039836482-3.webp", teacher: "Nguyễn Văn A", id: 1, class: "Lớp 12" },
-                { name: "Văn 12", img: "./resources/assets/img/1732039836482-3.webp", teacher: "Trần Thị B", id: 2, class: "Lớp 12" },
-                { name: "Anh 11", img: "./resources/assets/img/1732039836482-3.webp", teacher: "Lê Văn C", id: 3, class: "Lớp 11" },
-                { name: "Lý 11", img: "./resources/assets/img/1732039836482-3.webp", teacher: "Phạm Thị D", id: 4, class: "Lớp 11" },
-                { name: "Hóa 10", img: "./resources/assets/img/1732039836482-3.webp", teacher: "Nguyễn Văn E", id: 5, class: "Lớp 10" },
-                { name: "Sinh 10", img: "./resources/assets/img/1732039836482-3.webp", teacher: "Trần Thị F", id: 6, class: "Lớp 10" },
-                { name: "Sử 12", img: "./resources/assets/img/1732039836482-3.webp", teacher: "Lê Văn G", id: 7, class: "Lớp 12" },
-                { name: "Địa 11", img: "./resources/assets/img/1732039836482-3.webp", teacher: "Phạm Thị H", id: 8, class: "Lớp 11" },
-                { name: "GDCD 10", img: "./resources/assets/img/1732039836482-3.webp", teacher: "Nguyễn Văn I", id: 9, class: "Lớp 10" },
-                { name: "Tin 12", img: "./resources/assets/img/1732039836482-3.webp", teacher: "Trần Thị J", id: 10, class: "Lớp 12" },
-                { name: "Sử 12", img: "./resources/assets/img/1732039836482-3.webp", teacher: "Lê Văn G", id: 11, class: "Lớp 12" },
-                { name: "Địa 11", img: "./resources/assets/img/1732039836482-3.webp", teacher: "Phạm Thị H", id: 12, class: "Lớp 11" },
-                { name: "GDCD 10", img: "./resources/assets/img/1732039836482-3.webp", teacher: "Nguyễn Văn I", id: 13, class: "Lớp 10" },
-                { name: "Tin 12", img: "./resources/assets/img/1732039836482-3.webp", teacher: "Trần Thị J", id: 14, class: "Lớp 12" },
-            ];
+            const courses =
+                [
+                    { "name": "Công Phá Toán 12 SGK", "img": "./resources/assets/img/courses/2.webp", "teacher": "Nguyễn Văn Hoàng", "id": 1, "class": "Lớp 12" },
+                    { "name": "Công Phá Toán 11 SGK", "img": "./resources/assets/img/courses/3.webp", "teacher": "Khúc Phương Nam", "id": 2, "class": "Lớp 11" },
+                    { "name": "Công Phá Toán 10 SGK", "img": "./resources/assets/img/courses/4.webp", "teacher": "Lê Thanh Hải", "id": 3, "class": "Lớp 10" },
+                    { "name": "Công Phá Vật Lý 12 SGK", "img": "./resources/assets/img/courses/5.webp", "teacher": "Phạm Văn Nghĩa", "id": 4, "class": "Lớp 12" },
+                    { "name": "Công Phá Vật Lý 11 SGK", "img": "./resources/assets/img/courses/6.webp", "teacher": "Phạm Văn Nghĩa", "id": 5, "class": "Lớp 11" },
+                    { "name": "Công Phá Vật Lý 10 SGK", "img": "./resources/assets/img/courses/7.webp", "teacher": "Phạm Văn Nghĩa", "id": 6, "class": "Lớp 10" },
+                    { "name": "Công Phá Hóa Học 12 SGK", "img": "./resources/assets/img/courses/8.webp", "teacher": "Nguyễn Văn Long", "id": 7, "class": "Lớp 12" },
+                    { "name": "Công Phá Hóa Học 11 SGK", "img": "./resources/assets/img/courses/9.webp", "teacher": "Nguyễn Văn Long", "id": 8, "class": "Lớp 11" },
+                    { "name": "Công Phá Hóa Học 10 SGK", "img": "./resources/assets/img/courses/10.webp", "teacher": "Nguyễn Văn Long", "id": 9, "class": "Lớp 10" },
+                    { "name": "Bí Kíp Casio Toán THPT 2025", "img": "./resources/assets/img/courses/11.webp", "teacher": "Nguyễn Văn Hoàng", "id": 10, "class": "Lớp THPT" },
+                    { "name": "Hình Học Casio THPT 2025", "img": "./resources/assets/img/courses/12.webp", "teacher": "Khúc Phương Nam", "id": 11, "class": "Lớp THPT" },
+                    { "name": "Nắm Chắc 9+ Toán 12", "img": "./resources/assets/img/courses/13.webp", "teacher": "Lê Thanh Hải", "id": 12, "class": "Lớp 12" },
+                    { "name": "Nắm Chắc 9+ Vật Lý 12", "img": "./resources/assets/img/courses/14.webp", "teacher": "Trần Trịnh Nam", "id": 13, "class": "Lớp 12" },
+                    { "name": "Nắm Chắc 9+ Hóa Học 12", "img": "./resources/assets/img/courses/15.webp", "teacher": "Nguyễn Thị Thủy", "id": 14, "class": "Lớp 12" },
+                    { "name": "Nắm Chắc 8+ Toán 12", "img": "./resources/assets/img/courses/16.webp", "teacher": "Trần Trịnh Long", "id": 15, "class": "Lớp 12" },
+                    { "name": "Nắm Chắc 8+ Vật Lý 12", "img": "./resources/assets/img/courses/17.webp", "teacher": "Trần Trịnh Nam", "id": 16, "class": "Lớp 12" },
+                    { "name": "Nắm Chắc 8+ Hóa Học 12", "img": "./resources/assets/img/courses/18.webp", "teacher": "Nguyễn Thị Thủy", "id": 17, "class": "Lớp 12" }
+                ]
 
             let currentPage = 1;
             const coursesPerPage = 10;
@@ -307,6 +311,12 @@
             });
             renderCourses();
         </script>
+        <style>
+            a {
+                text-decoration: none;
+                color: inherit;
+            }
+        </style>
     </div>
 
     <footer class="footer">
@@ -385,7 +395,8 @@
                         <li>
                             <a href="./index.html" class="nav-link active">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24" fill="none"
-                                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
                                     <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
                                     <polyline points="9 22 9 12 15 12 15 22"></polyline>
                                 </svg>
@@ -396,7 +407,8 @@
                         <li>
                             <a href="./courses.html" class="nav-link">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24" fill="none"
-                                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
                                     <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
                                     <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
                                 </svg>
@@ -407,7 +419,8 @@
                         <li>
                             <a href="./news.html" class="nav-link">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24" fill="none"
-                                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
                                     <path
                                         d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2Zm0 0a2 2 0 0 1-2-2v-9c0-1.1.9-2 2-2h2">
                                     </path>
@@ -422,7 +435,8 @@
                         <li>
                             <a href="./login.html" class="nav-link">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24" fill="none"
-                                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
                                     <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
                                     <circle cx="12" cy="7" r="4"></circle>
                                 </svg>
