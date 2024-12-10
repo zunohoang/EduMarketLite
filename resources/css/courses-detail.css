@@ -7,6 +7,7 @@
 
 .main {
     display: flex;
+    background-color: #f3f4f5;
 }
 
 .left-container {
@@ -37,7 +38,7 @@
     height: 100%;
     background:  linear-gradient(to right,#2b6cb0,rgb(112, 161, 213) ,#2b6cb0 );
     object-fit: contain;
-    filter: blur(5px);
+    filter: blur(64px);
 }
 .video-header {
     position: absolute;
