@@ -1,138 +1,160 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: system-ui, -apple-system, sans-serif;
-}
-
-body {
-    background-color: #f5f5f5;
-}
-
 .main {
-    margin: 0 auto;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 87px !important;
+    padding-bottom: 50px;
+    width: 100%;
+    background: linear-gradient(to bottom, #CCE4F6, #F7F8F9);
+}
+
+.container-m {
     display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 30px;
-    background: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    grid-template-columns: repeat(12, 1fr);
+    gap: 2rem;
+    margin: 0.5rem 2.5rem;
+
 }
 
-.profile-section {
-    padding: 20px;
+.teacher-info {
+    grid-column: span 12;
+    background-color: white;
+    border-radius: 0.375rem;
+    padding: 1.25rem;
 }
 
-.profile-image {
-    width: 200px;
-    height: 200px;
-    border-radius: 8px;
-    object-fit: cover;
-    margin-bottom: 20px;
+.teacher-header {
+    display: flex;
+    gap: 1.25rem;
 }
 
-.profile-name {
-    color: #2563eb;
-    font-size: 24px;
-    margin-bottom: 8px;
+.teacher-avatar {
+    width: 9rem;
+    height: 9rem;
+    border-radius: 0.375rem;
 }
 
-.profile-title {
-    color: #4b5563;
-    margin-bottom: 20px;
+.teacher-name {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #2D5D90;
 }
 
-.profile-description {
+.teacher-role {
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+}
+
+.teacher-description {
+    margin-top: 1.25rem;
     color: #6b7280;
-    line-height: 1.6;
-    margin-bottom: 20px;
 }
 
 .social-links {
+    margin-top: 0.75rem;
+}
+
+.social-title {
+    font-weight: 600;
+    color: #2D5D90;
+    font-size: 1rem;
+}
+
+.social-icons {
     display: flex;
-    gap: 10px;
+    margin-top: 0.5rem;
 }
 
-.social-button {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    text-decoration: none;
+.social-icon {
+    width: 30px;
 }
 
-.facebook {
-    background-color: #1877f2;
-}
-
-.messenger {
-    background-color: #0099ff;
-}
-
-.youtube {
-    background-color: #ff0000;
-}
-
-.content-section {
-    padding: 20px;
+.courses-section {
+    grid-column: span 12;
 }
 
 .tabs {
     display: flex;
-    border-bottom: 1px solid #e5e7eb;
-    margin-bottom: 20px;
 }
 
 .tab {
-    padding: 12px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem;
+    height: 2rem;
     cursor: pointer;
-    color: #6b7280;
-    border-bottom: 2px solid transparent;
+    color: #9CA3AF;
 }
 
 .tab.active {
-    color: #2563eb;
-    border-bottom-color: #2563eb;
+    color: #2D5D90;
+    border-bottom: 2px solid #2D5D90;
+}
+
+.tab-content {
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.courses-list {
+    padding: 1rem 1.5rem;
+    margin-top: 1.25rem;
+    background-color: white;
+    border-radius: 0.375rem;
 }
 
 .courses-title {
-    font-size: 20px;
-    color: #111827;
-    margin-bottom: 20px;
+    color: #2D5D90;
+    font-size: 1rem;
+    font-weight: 500;
 }
 
-.course-list {
-    display: grid;
-    gap: 20px;
-}
-
-.course-card {
+.course-items {
+    margin-top: 0.75rem;
     display: flex;
-    gap: 16px;
-    padding: 16px;
-    border: 1px solid #e5e7eb;
-    border-radius: 8px;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.course-item {
+    display: flex;
+    gap: 0.75rem;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    padding: 0.75rem;
+    border-radius: 0.375rem;
     text-decoration: none;
     color: inherit;
 }
 
+.course-item:hover {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
 .course-image {
-    width: 80px;
-    height: 80px;
-    border-radius: 4px;
-    object-fit: cover;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 0.125rem;
 }
 
-.course-info h3 {
-    color: #2563eb;
-    margin-bottom: 4px;
+.course-name {
+    font-weight: 600;
+    font-size: medium;
+    color: #0369a1;
 }
 
-.course-info p {
-    color: #6b7280;
-    font-size: 14px;
+.course-teacher {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #082f49;
+}
+
+@media (min-width: 1024px) {
+    .teacher-info {
+        grid-column: span 5;
+    }
+
+    .courses-section {
+        grid-column: span 7;
+        margin-left: 2.5rem;
+    }
 }

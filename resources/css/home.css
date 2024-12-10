@@ -1,5 +1,5 @@
 .main {
-    padding-top: 87px !important; 
+    padding-top: 87px !important;
     padding-bottom: 50px;
     width: 100%;
     background: linear-gradient(to bottom, #CCE4F6, #F7F8F9);
@@ -23,9 +23,8 @@
     color: #155e94;
 }
 
-.right__bar ul {
-    
-}
+.right__bar ul {}
+
 .right__bar li:hover {
     background-color: rgba(26, 79, 140, 0.06);
 }
@@ -87,6 +86,7 @@
     font-size: 1.3rem;
     font-weight: bold;
 }
+
 .search__nav .fast__search {
     display: flex;
     flex-wrap: wrap;
@@ -95,7 +95,7 @@
 }
 
 .search__nav .search__item {
-    cursor:  pointer;
+    cursor: pointer;
     color: #2E5E97;
     background-color: #F3F5F6;
     font-size: 13.125px;
@@ -114,8 +114,9 @@
     margin-top: 2rem;
     width: 100%;
 }
+
 .teacher-header {
-    display:  flex;
+    display: flex;
     justify-content: space-between;
 }
 
@@ -134,11 +135,12 @@
     height: 220px;
     transition: overflow 0.3s ease;
 }
-.teacher-list:hover{
+
+.teacher-list:hover {
     overflow-x: auto;
 }
 
-.teacher-item{
+.teacher-item {
     cursor: pointer;
     color: white;
     width: 120px;
@@ -222,12 +224,11 @@
     height: 125px;
     border-radius: 10px;
 }
+
 .item-info {
     width: 125px;
     height: 125px;
 }
-
-
 
 .news {
     color: #155e94;
@@ -281,7 +282,3 @@
     color: #6e7583;
     font-size: 0.75rem;
 }
-
-
-
-

@@ -9,10 +9,10 @@
     <link rel="stylesheet" href="./resources/css/header.css">
     <link rel="stylesheet" href="./resources/css/footer.css">
     <link rel="stylesheet" href="./resources/css/enter-key.css">
+    <link rel="stylesheet" href="./resources/css/hoanggrid.css">
     <link rel="stylesheet" href="./resources/css/navigation-bottom.css">
     <link rel="stylesheet" href="https://cdn.lineicons.com/5.0/lineicons.css" />
     <!-- Mấy cái phía trên page nào cũng có nhá ae-->
-    <link rel="stylesheet" href="./resources/css/home.css">
     <link rel="stylesheet" href="./resources/css/teacher-profile.css">
 </head>
 
@@ -66,7 +66,7 @@
 
             <div class="auth-container">
                 <div class="auth-buttons background-none" style="background: none;">
-                    <a href="./sign-up.html" style="background: none;">
+                    <a href="./register.html" style="background: none;">
                         <button style="background: none;" class="auth-button register-button">Đăng ký</button>
                     </a>
                 </div>
@@ -152,52 +152,62 @@
 
     <!-- Ae code vào đây -->
     <div class="main">
-        <div class="profile-section l-4 m">
-            <img src="./resources/assets/img/home/teacher1.webp" alt="Teacher Profile" class="profile-image">
-            <h1 class="profile-name">Nguyễn Anh Phong</h1>
-            <p class="profile-title">Giáo viên EduMarket</p>
-            <p class="profile-description">
-                Thầy Phong là một giáo viên giàu kinh nghiệm trong lĩnh vực Hóa học với hơn 10 năm giảng dạy. Thầy không chỉ sở
-                hữu kiến thức sâu rộng và vững chắc, mà còn có phương pháp giảng dạy sáng tạo, giúp học sinh tiếp thu bài học
-                một cách hiệu quả và hứng thú. Với lòng nhiệt huyết và tình yêu dành cho nghề, thầy luôn tận tâm hỗ trợ học sinh
-                phát triển cả về kiến thức lẫn kỹ năng sống. Thầy Phong luôn được đồng nghiệp và học sinh yêu mến bởi tính cách
-                thân thiện, cởi mở và sự tận tụy trong công việc.
-            </p>
-            <div class="social-links">
-                <a href="#" class="social-button facebook"></a>
-                <a href="#" class="social-button messenger"></a>
-                <a href="#" class="social-button youtube"></a>
-            </div>
-        </div>
-        
-        <div class="content-section l-8 m-">
-            <div class="tabs">
-                <div class="tab active" data-tab="courses">Khóa học</div>
-                <div class="tab" data-tab="posts">Bài viết</div>
-            </div>
-        
-            <div class="tab-content" id="courses-content">
-                <h2 class="courses-title">Tất cả khóa học</h2>
-                <div class="course-list">
-                    <a href="#" class="course-card">
-                        <img src="./resources/assets/img/home/infor.webp" alt="Physics Course" class="course-image">
-                        <div class="course-info">
-                            <h3>Nâm chắc 9+ Vật lí 12</h3>
-                            <p>Giáo viên: Nguyễn Anh Phong</p>
-                        </div>
-                    </a>
-                    <a href="#" class="course-card">
-                        <img src="./resources/assets/img/home/infor.webp" alt="Chemistry Course" class="course-image">
-                        <div class="course-info">
-                            <h3>Nâm chắc 8+ Hóa Học</h3>
-                            <p>Giáo viên: Nguyễn Anh Phong</p>
-                        </div>
-                    </a>
+        <div class="container-m">
+            <div class="teacher-info">
+                <div class="teacher-header">
+                    <img src="./resources/assets/img/teachers/thay-nghi.webp" alt="teacher" class="teacher-avatar">
+                    <div>
+                        <p class="teacher-name">Thầy Nghị</p>
+                        <p class="teacher-role">Giáo viên EduMarket</p>
+                    </div>
+                </div>
+                <div class="teacher-description">
+                    <p><span style="font-weight: 500; color: #2D5D90;">Mô tả: </span> Thầy Nghị là một giáo viên giàu
+                        kinh nghiệm trong lĩnh vực Vật lí với hơn 10 năm giảng dạy. Thầy không chỉ sở hữu kiến thức sâu
+                        rộng và vững chắc, mà còn có phương pháp giảng dạy sáng tạo, giúp học sinh tiếp thu bài học một
+                        cách hiệu quả và hứng thú. Với lòng nhiệt huyết và tình yêu dành cho nghề, thầy luôn tận tâm hỗ
+                        trợ học sinh phát triển cả về kiến thức lẫn kỹ năng sống. Thầy Nghị luôn được đồng nghiệp và học
+                        sinh yêu mến bởi tính cách thân thiện, cởi mở và sự tận tụy trong công việc.
+                    </p>
+                </div>
+                <div class="social-links">
+                    <p class="social-title">Liên kết mạng xã hội</p>
+                    <div class="social-icons">
+                        <img src="./resources/assets/img/home/facebook-circle.png" class="social-icon" alt="Facebook">
+                        <img src="./resources/assets/img/home/messenger-circle.png" class="social-icon" alt="Messenger">
+                        <img src="./resources/assets/img/home/youtube-circle.png" class="social-icon" alt="YouTube">
+                    </div>
                 </div>
             </div>
-        
-            <div class="tab-content" id="posts-content" style="display: none;">
-                <h2 class="courses-title">Bài viết</h2>
+            <div class="courses-section">
+                <div class="tabs">
+                    <div class="tab active">
+                        <p>Khóa học</p>
+                    </div>
+                    <div class="tab">
+                        <p>Bài viết</p>
+                    </div>
+                </div>
+                <div class="tab-content"></div>
+                <div class="courses-list">
+                    <p class="courses-title">Tất cả khóa học</p>
+                    <div class="course-items">
+                        <a href="#" class="course-item">
+                            <img src="./resources/assets/img/1732039836482-3.webp" class="course-image" alt="">
+                            <div>
+                                <h1 class="course-name">Toán cao cấp</h1>
+                                <p class="course-teacher">Giáo viên: Thầy Nghị</p>
+                            </div>
+                        </a>
+                        <a href="#" class="course-item">
+                            <img src="./resources/assets/img/1732039836482-3.webp" class="course-image" alt="">
+                            <div>
+                                <h1 class="course-name">Toán rời rạc</h1>
+                                <p class="course-teacher">Giáo viên: Thầy Nghị</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -276,9 +286,10 @@
                     <ul class="navbar-menu">
                         <!-- Home Link -->
                         <li>
-                            <a href="./index.html" class="nav-link active">
+                            <a href="/" class="nav-link active">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24" fill="none"
-                                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
                                     <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
                                     <polyline points="9 22 9 12 15 12 15 22"></polyline>
                                 </svg>
@@ -287,9 +298,10 @@
                         </li>
                         <!-- Courses Link -->
                         <li>
-                            <a href="./courses.html" class="nav-link">
+                            <a href="/courses" class="nav-link">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24" fill="none"
-                                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
                                     <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
                                     <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
                                 </svg>
@@ -298,9 +310,10 @@
                         </li>
                         <!-- News Link -->
                         <li>
-                            <a href="./news.html" class="nav-link">
+                            <a href="/news" class="nav-link">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24" fill="none"
-                                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
                                     <path
                                         d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2Zm0 0a2 2 0 0 1-2-2v-9c0-1.1.9-2 2-2h2">
                                     </path>
@@ -313,9 +326,10 @@
                         </li>
                         <!-- Login Link -->
                         <li>
-                            <a href="./login.html" class="nav-link">
+                            <a href="/login" class="nav-link">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24" fill="none"
-                                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
                                     <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
                                     <circle cx="12" cy="7" r="4"></circle>
                                 </svg>
@@ -330,7 +344,6 @@
 
     <script src="./resources/js/footer.js"></script>
     <script src="./resources/js/enter-key.js"></script>
-    <script src="./resources/js/teacher-profile.js"></script>
     <!-- Ae thêm script sau thẻ này-->
 </body>
 
