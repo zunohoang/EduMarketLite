@@ -1,4 +1,12 @@
 const commentForm = document.getElementById('commentForm');
+const chapterButts = document.querySelectorAll('.chapter-button')
+
+chapterButts.forEach((chapterButt,idx) => {
+    chapterButt.addEventListener("click",(e) => {
+        document.getElementById(`${idx +1}`).classList.toggle('active');
+        console.log(document.getElementById(`${idx +1}`))
+    })
+})
 
 commentForm.addEventListener('submit', function(e) {
     e.preventDefault();
