@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="https://cdn.lineicons.com/5.0/lineicons.css" />
     <!-- Mấy cái phía trên page nào cũng có nhá ae-->
     <link rel="stylesheet" href="./resources/css/home.css">
+    <link rel="stylesheet" href="./resources/css/sign-in.css">
 </head>
 
 <body>
@@ -65,7 +66,7 @@
 
             <div class="auth-container">
                 <div class="auth-buttons background-none" style="background: none;">
-                    <a href="./register.html" style="background: none;">
+                    <a href="./sign-up.html" style="background: none;">
                         <button style="background: none;" class="auth-button register-button">Đăng ký</button>
                     </a>
                 </div>
@@ -151,7 +152,30 @@
 
     <!-- Ae code vào đây -->
     <div class="main">
-
+        <div class="container">
+            <div class="login-section">
+                <h2>ĐĂNG NHẬP</h2>
+                <form id="loginForm">
+                    <div class="form-group">
+                        <label for="username">Tên tài khoản</label>
+                        <input placeholder="Tên tài khoản" type="text" id="username" name="username" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Mật khẩu</label>
+                        <input placeholder="Mật khẩu" type="password" id="password" name="password" required>
+                    </div>
+                    <button type="submit" class="login-button">Đăng nhập</button>
+                </form>
+                <div id="message" class="message" style="display: none;"></div>
+                <div class="register-link">
+                    Chưa có tài khoản? <a href="./sign-up.html">Đăng kí</a>
+                </div>
+            </div>
+            <div class="image-section">
+                <h1 class="welcome-text">Chào mừng bạn đến với EduMarket</h1>
+                <img src="./resources/assets/img/loginpicture.gif" alt="Education illustration">
+            </div>
+        </div>
     </div>
 
     <footer class="footer">
@@ -228,10 +252,9 @@
                     <ul class="navbar-menu">
                         <!-- Home Link -->
                         <li>
-                            <a href="/" class="nav-link active">
+                            <a href="./index.html" class="nav-link active">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24" fill="none"
-                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round">
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                     <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
                                     <polyline points="9 22 9 12 15 12 15 22"></polyline>
                                 </svg>
@@ -240,10 +263,9 @@
                         </li>
                         <!-- Courses Link -->
                         <li>
-                            <a href="/courses" class="nav-link">
+                            <a href="./courses.html" class="nav-link">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24" fill="none"
-                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round">
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                     <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
                                     <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
                                 </svg>
@@ -252,10 +274,9 @@
                         </li>
                         <!-- News Link -->
                         <li>
-                            <a href="/news" class="nav-link">
+                            <a href="./news.html" class="nav-link">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24" fill="none"
-                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round">
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                     <path
                                         d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2Zm0 0a2 2 0 0 1-2-2v-9c0-1.1.9-2 2-2h2">
                                     </path>
@@ -268,10 +289,9 @@
                         </li>
                         <!-- Login Link -->
                         <li>
-                            <a href="/login" class="nav-link">
+                            <a href="./login.html" class="nav-link">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24" fill="none"
-                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round">
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                     <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
                                     <circle cx="12" cy="7" r="4"></circle>
                                 </svg>
@@ -287,6 +307,7 @@
     <script src="./resources/js/footer.js"></script>
     <script src="./resources/js/enter-key.js"></script>
     <!-- Ae thêm script sau thẻ này-->
+    <script src="./resources/js/sign-in-auth.js"></script>
 </body>
 
 </html>

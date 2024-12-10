@@ -7,6 +7,7 @@
     gap: 16px;
     width: 100%;
     position: fixed;
+    z-index: 100;
     top: 0;
     backdrop-filter: blur(10px);
     justify-content: space-between;
@@ -240,6 +241,7 @@
         padding: 0.5rem;
         border-radius: 10px;
         text-decoration: none;
+        height: 42px;
     }
 
     .logo-text {
@@ -256,6 +258,7 @@
         color: #374151;
         /* Gray-700 */
         margin-left: 0.5rem;
+        margin-bottom: 0;
     }
 
     /* Actions container */
