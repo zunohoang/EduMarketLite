@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="https://cdn.lineicons.com/5.0/lineicons.css" />
     <!-- Mấy cái phía trên page nào cũng có nhá ae-->
     <link rel="stylesheet" href="./resources/css/home.css">
+    <link rel="stylesheet" href="./resources/css/teacher-profile.css">
 </head>
 
 <body>
@@ -151,7 +152,54 @@
 
     <!-- Ae code vào đây -->
     <div class="main">
-
+        <div class="profile-section l-4 m">
+            <img src="./resources/assets/img/home/teacher1.webp" alt="Teacher Profile" class="profile-image">
+            <h1 class="profile-name">Nguyễn Anh Phong</h1>
+            <p class="profile-title">Giáo viên EduMarket</p>
+            <p class="profile-description">
+                Thầy Phong là một giáo viên giàu kinh nghiệm trong lĩnh vực Hóa học với hơn 10 năm giảng dạy. Thầy không chỉ sở
+                hữu kiến thức sâu rộng và vững chắc, mà còn có phương pháp giảng dạy sáng tạo, giúp học sinh tiếp thu bài học
+                một cách hiệu quả và hứng thú. Với lòng nhiệt huyết và tình yêu dành cho nghề, thầy luôn tận tâm hỗ trợ học sinh
+                phát triển cả về kiến thức lẫn kỹ năng sống. Thầy Phong luôn được đồng nghiệp và học sinh yêu mến bởi tính cách
+                thân thiện, cởi mở và sự tận tụy trong công việc.
+            </p>
+            <div class="social-links">
+                <a href="#" class="social-button facebook"></a>
+                <a href="#" class="social-button messenger"></a>
+                <a href="#" class="social-button youtube"></a>
+            </div>
+        </div>
+        
+        <div class="content-section l-8 m-">
+            <div class="tabs">
+                <div class="tab active" data-tab="courses">Khóa học</div>
+                <div class="tab" data-tab="posts">Bài viết</div>
+            </div>
+        
+            <div class="tab-content" id="courses-content">
+                <h2 class="courses-title">Tất cả khóa học</h2>
+                <div class="course-list">
+                    <a href="#" class="course-card">
+                        <img src="./resources/assets/img/home/infor.webp" alt="Physics Course" class="course-image">
+                        <div class="course-info">
+                            <h3>Nâm chắc 9+ Vật lí 12</h3>
+                            <p>Giáo viên: Nguyễn Anh Phong</p>
+                        </div>
+                    </a>
+                    <a href="#" class="course-card">
+                        <img src="./resources/assets/img/home/infor.webp" alt="Chemistry Course" class="course-image">
+                        <div class="course-info">
+                            <h3>Nâm chắc 8+ Hóa Học</h3>
+                            <p>Giáo viên: Nguyễn Anh Phong</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        
+            <div class="tab-content" id="posts-content" style="display: none;">
+                <h2 class="courses-title">Bài viết</h2>
+            </div>
+        </div>
     </div>
 
     <footer class="footer">
@@ -282,6 +330,7 @@
 
     <script src="./resources/js/footer.js"></script>
     <script src="./resources/js/enter-key.js"></script>
+    <script src="./resources/js/teacher-profile.js"></script>
     <!-- Ae thêm script sau thẻ này-->
 </body>
 
